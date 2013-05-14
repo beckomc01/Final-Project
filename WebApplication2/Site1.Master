@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication2.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <title>Final Project Homepage</title>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <h1>Christopher Beckom's Final Course Project</h1>
+    
+    
+            <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" BackColor="#000099" BorderColor="#000099" ForeColor="#FFFFCC" Height="30px" Width="900px">
+                <DynamicHoverStyle ForeColor="Red" />
+                <DynamicMenuItemStyle ForeColor="White" HorizontalPadding="20px" ItemSpacing="20px" />
+                <DynamicMenuStyle BackColor="#000099" VerticalPadding="20px" />
+            </asp:Menu>
+     
+        
+            <asp:TreeView ID="Tree" runat="server" DataSourceID="SiteMapDataSource1"></asp:TreeView></div>
+
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+
+        
+
+        <asp:SiteMapPath runat="server"></asp:SiteMapPath>
+        <asp:ContentPlaceHolder ID="content" runat="server"></asp:ContentPlaceHolder>
+
+
+</body>
+</html>
